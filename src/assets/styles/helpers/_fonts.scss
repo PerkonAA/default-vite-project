@@ -1,0 +1,20 @@
+@mixin webFont($family, $file, $weight: normal, $style: normal, $path: "../fonts/") {
+  @font-face {
+    font-family: $family;
+    src: url($path + $file + '.eot');
+    src: url($path + $file + '.eot?#iefix') format('embedded-opentype'),
+    url($path + $file + '.woff') format('woff'),
+    url($path + $file + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+    font-stretch: normal;
+    font-display: swap;
+  }
+}
+
+@include webFont('CoFo Sans', 'CoFoSans-Bold', bold);
+@include webFont('CoFo Sans', 'CoFoSans-Bold', 500);
+@include webFont('CoFo Sans', 'CoFoSans-Black', 900);
+@include webFont('CoFo Sans', 'CoFoSans-Regular', normal);
+//@include webFont('CoFo Sans', 'CoFoSans-Medium', 400);
+@include webFont('CoFo Sans', 'CoFoRobert-RegularItalic', normal, italic);

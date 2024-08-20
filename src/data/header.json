@@ -1,0 +1,28 @@
+{
+  "title": "Header json data",
+  "nav": [
+    {
+      "link": "#",
+      "text": "Частным клиентам"
+    },
+    {
+      "link": "#",
+      "text": "Бизнесу"
+    },
+    {
+      "link": "#",
+      "text": "Еще"
+    }
+  ],
+  "services": [
+    {
+      "type": "button",
+      "text": "Войти в iBank 2",
+      "link": "#"
+    },
+    {
+      "link": "#",
+      "text": "+7 495 775-31-81"
+    }
+  ]
+}

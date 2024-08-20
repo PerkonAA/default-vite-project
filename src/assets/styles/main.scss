@@ -1,0 +1,28 @@
+@import "./helpers/rest.css";
+@import "grid/_bootstrap-grid.css";
+@import "./helpers/fonts";
+@import "./helpers/gui";
+// Blocks styles
+@import "../../blocks/**/*.scss";
+// Components styles
+@import "../../components/**/*.scss";
+
+
+*, *::before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-brand;
+  font-weight: 400;
+  font-size: 18px;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
+}
